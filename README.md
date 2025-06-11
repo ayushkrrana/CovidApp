@@ -1,16 +1,27 @@
-# covidapp
+# 🦠 COVID Tracker App
 
-A new Flutter project.
+A Flutter-based mobile application that provides global and country-wise COVID-19 statistics using a public API. This project is aimed at practicing API integration, state management, UI design, and asynchronous data handling in Flutter.
 
-## Getting Started
+## 📱 Features
 
-This project is a starting point for a Flutter application.
+- 🌍 Global COVID-19 stats (cases, recoveries, deaths)
+- 🗺️ Country-wise data with search functionality
+- 🔄 Real-time data fetched from a public REST API
+- 🧭 Smooth navigation and responsive UI
+- 🎨 Shimmer loading effects while fetching data
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Technologies Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter](https://flutter.dev/)
+- [Dart](https://dart.dev/)
+- [HTTP](https://pub.dev/packages/http) for API requests
+- [Shimmer Animation](https://pub.dev/packages/shimmer_animation) for loading UI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📦 Packages
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.14.0
+  shimmer_animation: ^2.1.0
