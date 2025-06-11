@@ -36,7 +36,7 @@ class _WorldStatesState extends State<WorldStates>
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(15.0),
-          child: FutureBuilder(
+          child: FutureBuilder(// FutureBuilder is a widget used to handle asynchronous operations, particularly when dealing with Future objects, and update the UI accordingly
                 future: statsServices.fetchWorldRecords(),
                 builder: (context, AsyncSnapshot<WorldStatsModel> snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {

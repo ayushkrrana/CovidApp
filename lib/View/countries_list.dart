@@ -45,7 +45,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
               ),
             ),
             Expanded(
-              child: FutureBuilder(
+              child: FutureBuilder(// future builder require future data which come from future api model to rebuild its UI according to the data
                 future: statsServices.countriesNamesFetch(),
                 builder: (context, AsyncSnapshot<List<dynamic>> snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
@@ -107,8 +107,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
                           },
                                 child: ListTile(
                                   title: Text(snapshot.data![index]['country']),
-                                  subtitle: Text(snapshot.data![index]['cases'].toString(),
-                                  ), // we convert this to string because cases are in integer in the POSTMAN API
+                                  subtitle: Text(snapshot.data![index]['cases'].toString(),), // we convert this to string because cases are in integer in the POSTMAN API
                                   leading: Image(
                                     height: 50,
                                     width: 50,

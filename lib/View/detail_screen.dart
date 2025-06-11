@@ -26,7 +26,7 @@ class _DetailScreenCountryState extends State<DetailScreenCountry> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.name),
+        title: Text(widget.name),// we use widget here because we declare all this in the navigation page of countries_list
         centerTitle: true,
       ),
       body: Column(

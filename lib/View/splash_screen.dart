@@ -12,8 +12,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen>
-    with TickerProviderStateMixin {
-  //In Flutter, TickerProviderStateMixin is used when you want to create animations.,Specifically, it provides a Ticker, which is like a heartbeat that ticks every frame (usually 60 times per second). This "tick" drives your animation forward.
+    with TickerProviderStateMixin {//In Flutter, TickerProviderStateMixin is used when you want to create animations.,Specifically, it provides a Ticker, which is like a heartbeat that ticks every frame (usually 60 times per second). This "tick" drives your animation forward.
   late final AnimationController _controller = AnimationController(
     vsync: this,
     duration: const Duration(seconds: 3),
